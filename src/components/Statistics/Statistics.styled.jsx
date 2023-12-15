@@ -17,6 +17,7 @@ export const Item = styled.p`
   text-align: center;
   display: flex;
   flex-direction: column;
+  gap: 12px;
   font-style: oblique;
 `;
 
