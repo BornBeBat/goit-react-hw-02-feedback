@@ -5,25 +5,34 @@ import {
   Value,
 } from './Statistics.styled';
 
-export const Statistics = () => {
+export const Statistics = ({
+  good,
+  neutral,
+  bad,
+  total,
+  persent,
+}) => {
   return (
     <>
       <Title>Statistics</Title>
       <Container>
         <Item>
-          Good<Value>val</Value>
+          Good<Value>{good || '0'}</Value>
         </Item>
         <Item>
-          Neutral<Value>val</Value>
+          Neutral<Value>{neutral || '0'}</Value>
         </Item>
         <Item>
-          Bad<Value>val</Value>
+          Bad<Value>{bad || '0'}</Value>
         </Item>
         <Item>
-          Total<Value>val</Value>
+          Total<Value>{total || '0'}</Value>
         </Item>
         <Item>
-          Positivefeedback<Value>val</Value>
+          Positive&nbsp;feedback
+          <Value>
+            {persent === 'NaN' ? '' : persent + ' %'}
+          </Value>
         </Item>
       </Container>
     </>

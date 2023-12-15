@@ -3,12 +3,16 @@ import {
   Button,
 } from './FeedbackOptions.styled';
 
-export const FeedbackOptions = () => {
+export const FeedbackOptions = ({
+  onGood,
+  onBad,
+  onNeutral,
+}) => {
   return (
     <BtnContainer>
-      <Button>Good </Button>
-      <Button>Neutral</Button>
-      <Button>Bad</Button>
+      <Button onClick={onGood}>Good </Button>
+      <Button onClick={onNeutral}>Neutral</Button>
+      <Button onClick={onBad}>Bad</Button>
     </BtnContainer>
   );
 };
