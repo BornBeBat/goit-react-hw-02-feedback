@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 
-export const Title = styled.h2`
-  margin: 48px 0;
+export const Text = styled.p`
   text-align: center;
 `;

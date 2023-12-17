@@ -1,40 +1,26 @@
-import {
-  Title,
-  Container,
-  Item,
-  Value,
-} from './Statistics.styled';
+import { Title } from './Statistics.styled';
+import { StatContainer } from './StatContainer/StatContainer';
+import { Notification } from './Notification/Notification';
 
 export const Statistics = ({
   good,
   neutral,
   bad,
   total,
-  persent,
 }) => {
   return (
     <>
       <Title>Statistics</Title>
-      <Container>
-        <Item>
-          Good<Value>{good || '0'}</Value>
-        </Item>
-        <Item>
-          Neutral<Value>{neutral || '0'}</Value>
-        </Item>
-        <Item>
-          Bad<Value>{bad || '0'}</Value>
-        </Item>
-        <Item>
-          Total<Value>{total || '0'}</Value>
-        </Item>
-        <Item>
-          Positive&nbsp;feedback
-          <Value>
-            {persent === 'NaN' ? '' : persent + ' %'}
-          </Value>
-        </Item>
-      </Container>
+      {total > 0 ? (
+        <StatContainer
+          good={good}
+          neutral={neutral}
+          bad={bad}
+          total={total}
+        />
+      ) : (
+        <Notification message="There is no feedback" />
+      )}
     </>
   );
 };
