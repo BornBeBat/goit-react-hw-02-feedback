@@ -35,7 +35,7 @@ export class Section extends React.Component {
   };
 
   render() {
-    const { good, neutral, bad, total } = this.state;
+    const { good, neutral, bad } = this.state;
     return (
       <Feedback>
         <Title>Please leave feedback</Title>
