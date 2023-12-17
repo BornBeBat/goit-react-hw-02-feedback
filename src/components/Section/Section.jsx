@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
 import { Statistics } from 'components/Statistics/Statistics';
@@ -6,7 +6,7 @@ import { Statistics } from 'components/Statistics/Statistics';
 import { Feedback, Title } from './Section.styled';
 import { countTotalFeedback } from 'utils';
 
-export class Section extends React.Component {
+export class Section extends Component {
   constructor() {
     super();
 
