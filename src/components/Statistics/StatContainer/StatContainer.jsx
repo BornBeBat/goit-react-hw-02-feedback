@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { countPositiveFeedbackPercentage } from 'utils';
 import {
   Container,
@@ -33,4 +34,11 @@ export const StatContainer = ({
       </Item>
     </Container>
   );
+};
+
+StatContainer.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
 };

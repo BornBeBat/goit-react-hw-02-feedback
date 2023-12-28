@@ -6,5 +6,4 @@ export const AppContainer = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 26px;
-  padding: 150px auto;
 `;

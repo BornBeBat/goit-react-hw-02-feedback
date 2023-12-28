@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Title } from './Statistics.styled';
 import { StatContainer } from './StatContainer/StatContainer';
 import { Notification } from './Notification/Notification';
@@ -23,4 +24,11 @@ export const Statistics = ({
       )}
     </>
   );
+};
+
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
 };

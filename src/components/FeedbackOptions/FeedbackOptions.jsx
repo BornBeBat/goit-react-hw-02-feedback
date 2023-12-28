@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   BtnContainer,
   Button,
@@ -15,4 +16,10 @@ export const FeedbackOptions = ({
       <Button onClick={onBad}>Bad</Button>
     </BtnContainer>
   );
+};
+
+FeedbackOptions.propTypes = {
+  onGood: PropTypes.func.isRequired,
+  onBad: PropTypes.func.isRequired,
+  onNeutral: PropTypes.func.isRequired,
 };
