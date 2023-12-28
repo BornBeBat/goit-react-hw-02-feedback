@@ -1,10 +1,10 @@
 import { AppContainer } from './App.styled';
-import { Section } from 'components/Section/Section';
+import { FeedbackForm } from 'components/Section/FeedbackForm';
 
 export const App = () => {
   return (
     <AppContainer>
-      <Section />
+      <FeedbackForm />
     </AppContainer>
   );
 };

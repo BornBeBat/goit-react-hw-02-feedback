@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
 import { Statistics } from 'components/Statistics/Statistics';
 
-import { Feedback, Title } from './Section.styled';
+import { Feedback, Title } from './FeedbackForm.styled';
 import { countTotalFeedback } from 'utils';
 
-export class Section extends Component {
+export class FeedbackForm extends Component {
   constructor() {
     super();
 
