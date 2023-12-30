@@ -20,7 +20,7 @@ export const StatContainer = ({ options }) => {
         ))}
       </Container>
       <Item>
-        Positive&nbsp;feedback
+        Positive feedback
         <Value>
           {countPositiveFeedbackPercentage(good, total)}
         </Value>

@@ -20,6 +20,7 @@ export const Button = styled.button`
   box-shadow: 0px 0px 20px 10px var(--accent2) inset,
     0px 0px 10px 7px var(--accent2);
   color: white;
+  text-transform: capitalize;
   transition: all 0.4s ease;
   &:hover,
   &:focus {
@@ -27,6 +28,6 @@ export const Button = styled.button`
     box-shadow: 0px 0px 18px 5px var(--accent1) inset,
       0px 0px 8px 5px var(--accent1);
     cursor: pointer;
+    transition: all 0.4s ease;
   }
-  text-transform: capitalize;
 `;
