@@ -8,7 +8,11 @@ export const FeedbackOptions = ({ onClick, options }) => {
   return (
     <BtnContainer>
       {options.map(elem => (
-        <Button type="button" onClick={onClick} key={elem}>
+        <Button
+          type="button"
+          onClick={() => onClick(elem)}
+          key={elem}
+        >
           {elem}
         </Button>
       ))}

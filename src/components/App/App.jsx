@@ -14,8 +14,7 @@ export class App extends Component {
     bad: 0,
   };
 
-  onLeaveFeedback = e => {
-    const option = e.target.innerHTML;
+  onLeaveFeedback = option => {
     this.setState(prevState => ({
       [option]: prevState[option] + 1,
     }));
