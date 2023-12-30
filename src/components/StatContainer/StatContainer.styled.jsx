@@ -5,9 +5,11 @@ export const Container = styled.div`
   flex-wrap: wrap;
   row-gap: 26px;
   justify-content: center;
+  margin-bottom: 15px;
 `;
 
 export const Item = styled.p`
+  text-transform: capitalize;
   flex-basis: 25%;
   text-align: center;
   display: flex;

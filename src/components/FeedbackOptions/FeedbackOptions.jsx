@@ -4,22 +4,19 @@ import {
   Button,
 } from './FeedbackOptions.styled';
 
-export const FeedbackOptions = ({
-  onGood,
-  onBad,
-  onNeutral,
-}) => {
+export const FeedbackOptions = ({ onClick, options }) => {
   return (
     <BtnContainer>
-      <Button onClick={onGood}>Good </Button>
-      <Button onClick={onNeutral}>Neutral</Button>
-      <Button onClick={onBad}>Bad</Button>
+      {options.map(elem => (
+        <Button type="button" onClick={onClick} key={elem}>
+          {elem}
+        </Button>
+      ))}
     </BtnContainer>
   );
 };
 
 FeedbackOptions.propTypes = {
-  onGood: PropTypes.func.isRequired,
-  onBad: PropTypes.func.isRequired,
-  onNeutral: PropTypes.func.isRequired,
+  onClick: PropTypes.func.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

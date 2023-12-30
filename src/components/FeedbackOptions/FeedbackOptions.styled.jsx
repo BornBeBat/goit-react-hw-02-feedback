@@ -14,15 +14,19 @@ export const Button = styled.button`
   padding: 8px 16px;
   border-radius: 6px;
   border: none;
+  outline: none;
+
   background-color: var(--accent1);
   box-shadow: 0px 0px 20px 10px var(--accent2) inset,
     0px 0px 10px 7px var(--accent2);
   color: white;
   transition: all 0.4s ease;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--accent2);
     box-shadow: 0px 0px 18px 5px var(--accent1) inset,
       0px 0px 8px 5px var(--accent1);
     cursor: pointer;
   }
+  text-transform: capitalize;
 `;
